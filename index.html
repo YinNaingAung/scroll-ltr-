@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+    body{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center
+    }
+    .width{
+        width:350px;
+        display:flex;
+        align-items: center;
+       
+        background-color:yellow;
+        overflow:hidden
+    }
+    .imgCon{
+
+    }
+    .imgCon img{
+        width:300px;
+        height: 200px;
+        margin:10px;
+    }
+    .btn{
+        width:100px;
+        height:50px;
+        background-color:red;
+        margin-bottom: 50px;
+        cursor: pointer;
+        transition:2s
+    }
+    .btn:hover{
+        background:green;
+    }
+</style>
+<body>
+    <div>
+        <button class="btn btn1">Button1</button>
+        <button class="btn btn2">Button2</button>
+        <button class="btn btn3">Button3</button>
+    </div>
+    <div class="width">
+        <div class="imgCon img1">
+            <img src="jk.1997.jpg" alt="">
+        </div>
+        <div class="imgCon img2">
+            <img src="jkk.1997.jpg" alt="">
+        </div>
+        <div class="imgCon img3">
+            <img src="lusi.jpg" alt="">
+        </div>
+        
+    </div>
+    <script>
+         let Btn1 = document.querySelector(".btn1")
+         let Btn2 = document.querySelector(".btn2")
+         let Btn3 = document.querySelector(".btn3")
+         let Image1 = document.querySelector(".img1")
+         let Image2 = document.querySelector(".img2")
+         let Image3 = document.querySelector(".img3")
+
+         Btn1.addEventListener("click",()=>{
+            Image1.style.marginLeft="0";
+            Image1.style.transition="0.3s"
+         })
+         Btn2.addEventListener("click",()=>{
+            Image1.style.marginLeft="-90%";
+            Image1.style.transition="0.3s"
+         })
+         Btn3.addEventListener("click",()=>{
+            Image1.style.marginLeft="-175%";
+            Image1.style.transition="0.3s"
+         })
+
+    </script>
+</body>
+</html>
+
